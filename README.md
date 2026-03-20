@@ -46,3 +46,33 @@
 ---
 
 ## 📁 Структура проекта
+inventory-management-system/
+├── 📄 index.html # Главная страница
+├── 📁 css/
+│ └── 📄 style.css # Стили приложения
+├── 📁 js/
+│ ├── 📄 storage.js # Модуль работы с localStorage
+│ ├── 📄 api.js # Эмуляция API
+│ └── 📄 app.js # Основная логика приложения
+├── 📁 docs/
+│ └── 📄 technical_specification.md # Техническое задание
+└── 📄 README.md # Описание проекта
+
+---
+
+## 🏗️ Архитектура
+
+```mermaid
+graph TD
+    A[index.html] --> B[style.css]
+    A --> C[app.js]
+    C --> D[api.js]
+    D --> E[storage.js]
+    E --> F[localStorage]
+    
+    style A fill:#3498db,stroke:#333,stroke-width:2px,color:#fff
+    style B fill:#2ecc71,stroke:#333,stroke-width:2px,color:#fff
+    style C fill:#e74c3c,stroke:#333,stroke-width:2px,color:#fff
+    style D fill:#f39c12,stroke:#333,stroke-width:2px,color:#fff
+    style E fill:#9b59b6,stroke:#333,stroke-width:2px,color:#fff
+    style F fill:#1abc9c,stroke:#333,stroke-width:2px,color:#fff
